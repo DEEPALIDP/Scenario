@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="ParallelTest" parallel="tests">
+  <groups>
+  <run>
+  <include name="google"></include>
+  <include name="Qaagility"></include>
+  <include name="calculator"></include>
+  </run> 
+  </groups>
+  <test name="Test">
+    <classes>
+      <class name="com.testData.TestCaseForScenarios"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- ParallelTest -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [ParallelTest]" parallel="tests">
+  <test name="Test(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="google"/>
+        <include name="Qaagility"/>
+        <include name="calculator"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.testData.TestCaseForScenarios">
+        <methods>
+          <include name="mapTest"/>
+          <include name="superSmartCalculator"/>
+        </methods>
+      </class> <!-- com.testData.TestCaseForScenarios -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [ParallelTest] -->
